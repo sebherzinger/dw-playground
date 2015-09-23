@@ -16,7 +16,7 @@ gulp.task('clean', function() {
  * Compiles the JADE templates
  */
 gulp.task('build-jade', function() {
-	gulp.src('./app/templates/**/*.jade')
+	gulp.src('./app/templates/*.jade')
 		.pipe(jade({pretty: true}))
 		.pipe(gulp.dest('./dist'));
 });
@@ -64,7 +64,7 @@ gulp.task('build-js', function() {
  * Watcher
  */
 gulp.task('watch', function() {
-	gulp.watch('./app/templates/**/*.jade', ['build-jade']);
+	gulp.watch('./app/templates/*.jade', ['build-jade']);
 	gulp.watch('./app/sass/*.scss', ['build-sass']);
 	gulp.watch('./app/js/*.js', ['build-js']);
 });

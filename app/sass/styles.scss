@@ -69,8 +69,10 @@ body {
 
 .hero-caption {
 	position: absolute;
+	left: 50%;
 	top: 50%;
-	width: 100%;
+	transform: translate(-50%, -50%);
+	width: 50%;
 	
 	& h1, & h2 {
 		font-family: 'MontserratBold';
@@ -92,16 +94,23 @@ body {
 }
 
 
+.facts, .team, .gallery {
+	padding-top: 50px;
+	padding-bottom: 120px;
+}
+
 .facts {
 	color: $color-dark-blue;
 	background: $color-light-grey;
-	padding-top: 50px;
-	padding-bottom: 120px;
 	
-	& h2, & h3 {
+	& h3 {
 		font-family: 'MontserratBold';
 		text-transform: uppercase;
 	}
+}
+
+.intro {
+	margin-bottom: 100px;
 }
 
 .facts-box {
@@ -111,6 +120,36 @@ body {
 		background: $color-white;
 		padding: 20px 25px 20px 25px;
 	}
+}
+
+.intro-text {
+	font-family: 'MerriweatherLight';
+	
+	& h2, & h3 {
+		font-family: 'MontserratBold';
+		text-transform: uppercase;
+	}
+}
+
+.facts-box-img {
+	position: relative;
+	top: -60px;
+}
+
+.team {
+	background: url(../img/background-team.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.gallery {
+	background: $color-dark-blue;
+}
+
+.gallery-content {
+	margin-bottom: 30px;
 }
 
 .footer {

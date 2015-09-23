@@ -6107,8 +6107,10 @@ body {
 
 .hero-caption {
   position: absolute;
+  left: 50%;
   top: 50%;
-  width: 100%; }
+  transform: translate(-50%, -50%);
+  width: 50%; }
   .hero-caption h1, .hero-caption h2 {
     font-family: 'MontserratBold';
     text-transform: uppercase; }
@@ -6121,20 +6123,48 @@ body {
   font-family: 'MontserratBold';
   padding: 10px 50px; }
 
-.facts {
-  color: #161b20;
-  background: #dfdfe1;
+.facts, .team, .gallery {
   padding-top: 50px;
   padding-bottom: 120px; }
-  .facts h2, .facts h3 {
+
+.facts {
+  color: #161b20;
+  background: #dfdfe1; }
+  .facts h3 {
     font-family: 'MontserratBold';
     text-transform: uppercase; }
+
+.intro {
+  margin-bottom: 100px; }
 
 .facts-box {
   font-family: 'MerriweatherLight'; }
   .facts-box > div {
     background: #fff;
     padding: 20px 25px 20px 25px; }
+
+.intro-text {
+  font-family: 'MerriweatherLight'; }
+  .intro-text h2, .intro-text h3 {
+    font-family: 'MontserratBold';
+    text-transform: uppercase; }
+
+.facts-box-img {
+  position: relative;
+  top: -60px; }
+
+.team {
+  background: url(../img/background-team.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.gallery {
+  background: #161b20; }
+
+.gallery-content {
+  margin-bottom: 30px; }
 
 .footer {
   color: #484d52;
