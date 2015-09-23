@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset='utf-8')        
+        
+		meta(name='robots', content='noindex,nofollow')
+		
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		
+		meta(name='description', content='')
+		meta(name='keywords', content='')
+		meta(name='author', content='Sebastian Lukas Herzinger')
+		
+		
+		title dw-playground
+		
+		link(href='./assets/css/styles.css', rel='stylesheet')
+	body
+	
+		header#header.header
+			include modules/nav/mainnav.jade
+		
+		section#hero.hero
+			include modules/hero/hero.jade
+		
+		section#facts.facts
+			div.container
+				div.row.facts-intro
+					div.col-xs-12.facts-intro-text.text-center
+						h2 A few facts about us
+						p Before you do business with us, you might want to know a little bit more about our company:
+				div.row.facts-boxes
+					div.col-xs-4.facts-box.text-center
+						div
+							h3 We are cowboys
+							p You might have guessed that from our company name, but the fact is: Yes, we are indeed cowboys. Cowboys who‘d like to go to space. Deal with it.
+					div.col-xs-4.facts-box.text-center
+						div
+							h3 We like to tinker
+							p There are a lot of things lying around on a typical Cowboy Ranch. So we started putting them together, and got really good at rocket building.  
+					div.col-xs-4.facts-box.text-center
+						div
+							h3 We explore space
+							p Once we got our first proper rocket, everything went quite fast. And now we are the #1 independent space agency in the world. Who would have guessed?
+		
+		section#team.team
+		
+		section#gallery.gallery
+		
+		section#contact.contact
+		
+		footer#footer.footer
+			div.container
+				div.row
+					div.col-xs-12.text-center
+						p Copyright &copy; 2015
+						img(src='./assets/img/logo-footer.png' alt='Footer Logo')
+		
+		script(src='./assets/js/all.js')

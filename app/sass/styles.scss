@@ -1,0 +1,122 @@
+@import "./node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+$color-white: #fff;
+$color-dark-blue: #161b20;
+$color-light-grey: #dfdfe1;
+$color-dark-grey: #484d52;
+$color-yellow: #ffdf09;
+
+
+@font-face{ 
+	font-family: 'MontserratRegular';
+	src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face{ 
+	font-family: 'MontserratBold';
+	src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face{ 
+	font-family: 'MerriweatherLight';
+	src: url('../fonts/Merriweather-Light.ttf') format('truetype');
+}
+
+@font-face{ 
+	font-family: 'MerriweatherLightItalic';
+	src: url('../fonts/Merriweather-LightItalic.ttf') format('truetype');
+}
+
+body {
+	color: $color-white;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+}
+
+.header-container {
+	position: relative;
+	z-index: 15;
+	padding-top: 27px;
+	padding-bottom: 27px;
+}
+
+.main-nav-list {
+	& .main-nav-item {
+		padding-left: 25px;
+	}	
+}
+
+.main-nav-item-link {
+	color: $color-white;
+	text-transform: uppercase;
+	font-family: 'MontserratBold';
+	position: relative;
+	top: 7px;
+	
+	&:hover, &:focus {
+		color: $color-white;
+	}
+}
+
+.hero {
+	position: relative;
+	top: 0px;
+	z-index: 10;
+}
+
+.hero-caption {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	
+	& h1, & h2 {
+		font-family: 'MontserratBold';
+		text-transform: uppercase;
+	}
+	
+	& h2 {
+		margin-bottom: 120px;
+	}
+}
+
+.btn {
+	&.btn-yellow {
+		background: $color-yellow;
+		color: $color-dark-blue;
+		font-family: 'MontserratBold';
+		padding: 10px 50px;
+	}
+}
+
+
+.facts {
+	color: $color-dark-blue;
+	background: $color-light-grey;
+	padding-top: 50px;
+	padding-bottom: 120px;
+	
+	& h2, & h3 {
+		font-family: 'MontserratBold';
+		text-transform: uppercase;
+	}
+}
+
+.facts-box {
+	font-family: 'MerriweatherLight';
+	
+	& > div {
+		background: $color-white;
+		padding: 20px 25px 20px 25px;
+	}
+}
+
+.footer {
+	color: $color-dark-grey;
+	background: $color-dark-blue;
+	padding-top: 35px;
+	padding-bottom: 30px;
+}
+

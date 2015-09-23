@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/sebherzinger/dw-playground",
   "devDependencies": {
+    "bootstrap-sass": "^3.3.5",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.0",
     "gulp-imagemin": "^2.3.0",

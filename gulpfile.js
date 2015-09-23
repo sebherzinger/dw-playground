@@ -16,9 +16,26 @@ gulp.task('clean', function() {
  * Compiles the JADE templates
  */
 gulp.task('build-jade', function() {
-	gulp.src('./app/**/*.jade')
+	gulp.src('./app/templates/**/*.jade')
 		.pipe(jade({pretty: true}))
 		.pipe(gulp.dest('./dist'));
+});
+
+/**
+ * Compress IMAGES
+ */
+gulp.task('compress-images', function() {
+    gulp.src('./app/img/*.{png,gif,jpg}')
+        .pipe(imagemin({optimizationLevel: 3, progressive: true, interlaced: true}))
+        .pipe(gulp.dest('./dist/assets/img'));
+});
+
+/**
+ * Move FONTS
+ */
+gulp.task('copy-fonts', function() {
+	gulp.src('./app/fonts/**/*.{ttf,woff,eof,svg}')
+		.pipe(gulp.dest('./dist/assets/fonts'));
 });
 
 /**
@@ -34,14 +51,20 @@ gulp.task('build-sass', function() {
  * Compiles the JAVASCRIPT files
  */
 gulp.task('build-js', function() {
-  
+	return gulp.src([
+		'./node_modules/jquery/dist/jquery.min.js',
+		'./node_modules/bootstrap-sass/assets/javascript/bootstrap.min.js', 
+		'./app/js/main.js'
+	])
+		.pipe(concat('all.js'))
+    	.pipe(gulp.dest('./dist/assets/js'));
 });
 
 /**
  * Watcher
  */
 gulp.task('watch', function() {
-	gulp.watch('./app/*.jade', ['build-jade']);
+	gulp.watch('./app/templates/**/*.jade', ['build-jade']);
 	gulp.watch('./app/sass/*.scss', ['build-sass']);
 	gulp.watch('./app/js/*.js', ['build-js']);
 });
