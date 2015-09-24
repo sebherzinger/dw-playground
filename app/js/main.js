@@ -4,16 +4,24 @@ $(document).ready( function() {
 		
 		if ( $(this).scrollTop() > 1 ) {  
 			$('#header').addClass("sticky");
-			$('.main-nav-item:first-child').addClass('active');
+			//$('.main-nav-item:first-child').addClass('active');
 		} else{
 			$('#header').removeClass("sticky");
-			$('.main-nav-item:first-child').removeClass('active');
+			//$('.main-nav-item:first-child').removeClass('active');
 		}
-		
-		
 		
 	});
 	
+	$('section').viewportChecker({
+		classToAdd: 'visible',
+		offset: 0,
+		callbackFunction: function(e, action) {
+			//$('.main-nav-item').removeClass('active');
+			//$('*[data-name="'+ e.attr('id') +'"]').parent().addClass('active');
+		}
+	});
+	
+	 window.sr = new scrollReveal();
 	
 	$('#js-toTop').on('click', function(e) {
 		$("html, body").animate({ 

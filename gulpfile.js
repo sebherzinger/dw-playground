@@ -54,6 +54,8 @@ gulp.task('build-js', function() {
 	return gulp.src([
 		'./node_modules/jquery/dist/jquery.min.js',
 		'./node_modules/bootstrap-sass/assets/javascript/bootstrap.min.js', 
+		'./node_modules/jquery-plugin-viewport-checker/dist/jquery.viewportchecker.min.js',
+		'./node_modules/scrollreveal/dist/scrollReveal.min.js',
 		'./app/js/main.js'
 	])
 		.pipe(concat('all.js'))
