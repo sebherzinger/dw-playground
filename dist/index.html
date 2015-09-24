@@ -14,13 +14,13 @@
     <header id="header" class="header">
       <div class="container">
         <div class="row header-container">
-          <div class="col-xs-2"><a href="#" title="Home Link"><img src="./assets/img/logo-small.png" alt="Rocket Logo Small"></a></div>
+          <div class="col-xs-2"><a href="#" title="Home Link" id="js-toTop"><img src="./assets/img/logo-small.png" alt="Rocket Logo Small"></a></div>
           <div class="col-xs-10 text-right main-nav-container">
             <ul class="list-unstyled list-inline main-nav-list">
-              <li class="main-nav-item"> <a href="#" title="Link 01" class="main-nav-item-link">About Us</a></li>
-              <li class="main-nav-item"> <a href="#" title="Link 02" class="main-nav-item-link">The Team</a></li>
-              <li class="main-nav-item"> <a href="#" title="Link 03" class="main-nav-item-link">Impressions</a></li>
-              <li class="main-nav-item"> <a href="#" title="Link 04" class="main-nav-item-link">Contact</a></li>
+              <li class="main-nav-item"><a href="#" data-name="facts" title="Link 01" class="js-scrollTo main-nav-item-link">About Us</a></li>
+              <li class="main-nav-item"> <a href="#" data-name="team" title="Link 02" class="js-scrollTo main-nav-item-link">The Team</a></li>
+              <li class="main-nav-item"> <a href="#" data-name="gallery" title="Link 03" class="js-scrollTo main-nav-item-link">Impressions</a></li>
+              <li class="main-nav-item"> <a href="#" data-name="contact" title="Link 04" class="js-scrollTo main-nav-item-link">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -31,7 +31,7 @@
       <div class="hero-caption text-center">
         <h1>Hey there, we are spacecowboy</h1>
         <h2>- an independent space agency - </h2>
-        <button type="button" class="btn btn-yellow">Learn more</button>
+        <button type="button" data-name="facts" class="btn btn-yellow js-scrollTo">Learn more</button>
       </div>
     </section>
     <section id="facts" class="facts">
@@ -74,6 +74,60 @@
             <div>Click on the pictures to get some more information!</div>
           </div>
         </div>
+        <div class="row team-members text-center">
+          <div class="col-xs-4 team-member"><a href="#" title="Cowboy 1" class="row">
+              <div class="col-xs-6"><img src="./assets/img/cowboy-01.png" alt="Cowboy 1" class="img-responsive"></div>
+              <div class="col-xs-6 text-left">
+                <h3>Dick Harvey</h3>
+                <p class="team-position">Captain</p>
+                <div class="team-data">
+                  <div>Age: 56</div>
+                  <div>Missions: 13					</div>
+                </div>
+              </div></a></div>
+          <div class="col-xs-4 team-member"><a href="#" title="Cowboy 2" class="row">
+              <div class="col-xs-6"><img src="./assets/img/cowboy-02.png" alt="Cowboy 2" class="img-responsive"></div>
+              <div class="col-xs-6 text-left">
+                <h3>Richie Farhem</h3>
+                <p>Captain</p>
+                <div>
+                  <div>Age: 48</div>
+                  <div>Missions: 13</div>
+                </div>
+              </div></a></div>
+          <div class="col-xs-4 team-member"><a href="#" title="Cowboy 3" class="row">
+              <div class="col-xs-6"><img src="./assets/img/cowboy-03.png" alt="Cowboy 3" class="img-responsive"></div>
+              <div class="col-xs-6 text-left">
+                <h3>John Siracha</h3>
+                <p>Captain</p>
+                <div>
+                  <div>Age: 47</div>
+                  <div>Missions: 13</div>
+                </div>
+              </div></a></div>
+        </div>
+        <div class="row team-members text-center">
+          <div class="col-xs-4 col-xs-offset-2 team-member"><a href="#" title="Cowboy 4" class="row">
+              <div class="col-xs-6"><img src="./assets/img/cowboy-04.png" alt="Cowboy 4" class="img-responsive"></div>
+              <div class="col-xs-6 text-left">
+                <h3>Bert McNamara</h3>
+                <p>Captain</p>
+                <div>
+                  <div>Age: 71</div>
+                  <div>Missions: 13</div>
+                </div>
+              </div></a></div>
+          <div class="col-xs-4 team-member"><a href="#" title="Cowboy 5" class="row">
+              <div class="col-xs-6"><img src="./assets/img/cowboy-05.png" alt="Cowboy 5" class="img-responsive"></div>
+              <div class="col-xs-6 text-left">
+                <h3>Al Sveringe</h3>
+                <p>CEO</p>
+                <div>
+                  <div>Age: 76</div>
+                  <div>Missions: 13</div>
+                </div>
+              </div></a></div>
+        </div>
       </div>
     </section>
     <section id="gallery" class="gallery">
@@ -85,24 +139,65 @@
           </div>
         </div>
         <div class="row gallery-content"> 
-          <div class="col-xs-12 col-sm-2"><a href="#" title="Thumb 01 Link"><img src="./assets/img/thumb-01.png" alt="Thumb 01"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 02 Link"><img src="./assets/img/thumb-02.png" alt="Thumb 02"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 03 Link"><img src="./assets/img/thumb-03.png" alt="Thumb 03"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 04 Link"><img src="./assets/img/thumb-04.png" alt="Thumb 04"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 05 Link"><img src="./assets/img/thumb-05.png" alt="Thumb 05"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 06 Link"><img src="./assets/img/thumb-06.png" alt="Thumb 06"></a></div>
+          <div class="col-xs-4 col-sm-2"><a href="#" title="Thumb 01 Link"><img src="./assets/img/thumb-01.png" alt="Thumb 01"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 02 Link"><img src="./assets/img/thumb-02.png" alt="Thumb 02"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 03 Link"><img src="./assets/img/thumb-03.png" alt="Thumb 03"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 04 Link"><img src="./assets/img/thumb-04.png" alt="Thumb 04"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 05 Link"><img src="./assets/img/thumb-05.png" alt="Thumb 05"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 06 Link"><img src="./assets/img/thumb-06.png" alt="Thumb 06"></a></div>
         </div>
         <div class="row gallery-content"> 
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 07 Link"><img src="./assets/img/thumb-07.png" alt="Thumb 07"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 08 Link"><img src="./assets/img/thumb-08.png" alt="Thumb 08"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 09 Link"><img src="./assets/img/thumb-09.png" alt="Thumb 09"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 10 Link"><img src="./assets/img/thumb-10.png" alt="Thumb 10"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 11 Link"><img src="./assets/img/thumb-11.png" alt="Thumb 11"></a></div>
-          <div class="col-xs-12 col-sm-2"> <a href="#" title="Thumb 12 Link"><img src="./assets/img/thumb-12.png" alt="Thumb 12"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 07 Link"><img src="./assets/img/thumb-07.png" alt="Thumb 07"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 08 Link"><img src="./assets/img/thumb-08.png" alt="Thumb 08"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 09 Link"><img src="./assets/img/thumb-09.png" alt="Thumb 09"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 10 Link"><img src="./assets/img/thumb-10.png" alt="Thumb 10"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 11 Link"><img src="./assets/img/thumb-11.png" alt="Thumb 11"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 12 Link"><img src="./assets/img/thumb-12.png" alt="Thumb 12"></a></div>
         </div>
       </div>
     </section>
-    <section id="contact" class="contact"></section>
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row intro">
+          <div class="col-xs-12 intro-text text-center">
+            <h2>Say Hello</h2>
+            <div>Got some questions about us? Wanna do business with us? </div>
+            <div>Or do you just want to send us your latest cat-content - there you go:</div>
+          </div>
+        </div>
+        <form class="row">
+          <div class="col-xs-3 col-xs-offset-3">
+            <div class="row">
+              <div class="col-xs-12">
+                <input type="text" id="example01" placeholder="First Name" class="form-control">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <input type="text" id="example02" placeholder="Last Name" class="form-control col-xs-8">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <input type="email" id="example03" placeholder="E-Mail" class="form-control col-xs-4">
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="row">
+              <div class="col-xs-12">
+                <textarea rows="7" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <button type="button" class="btn btn-yellow">Send that mail</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer id="footer" class="footer">
       <div class="container">
         <div class="row">

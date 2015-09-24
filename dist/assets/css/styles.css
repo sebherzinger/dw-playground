@@ -6078,9 +6078,34 @@ button.close {
 body {
   color: #fff; }
 
+h1, h2, h3, h4 {
+  font-family: 'MontserratBold';
+  text-transform: uppercase; }
+
+.btn.btn-yellow {
+  background: #ffdf09;
+  color: #161b20;
+  font-family: 'MontserratBold';
+  padding: 10px 50px; }
+
 .header {
+  background: transparent;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  -webkit-transition: background 500ms ease-in-out;
+  -moz-transition: background 500ms ease-in-out;
+  -ms-transition: background 500ms ease-in-out;
+  -o-transition: background 500ms ease-in-out;
+  transition: background 500ms ease-in-out; }
+  .header.sticky {
+    background: #43484e;
+    position: fixed;
+    z-index: 20;
+    -webkit-transition: background 500ms ease-in-out;
+    -moz-transition: background 500ms ease-in-out;
+    -ms-transition: background 500ms ease-in-out;
+    -o-transition: background 500ms ease-in-out;
+    transition: background 500ms ease-in-out; }
 
 .header-container {
   position: relative;
@@ -6091,6 +6116,9 @@ body {
 .main-nav-list .main-nav-item {
   padding-left: 25px; }
 
+.main-nav-item.active a {
+  color: #ffdf09; }
+
 .main-nav-item-link {
   color: #fff;
   text-transform: uppercase;
@@ -6098,7 +6126,8 @@ body {
   position: relative;
   top: 7px; }
   .main-nav-item-link:hover, .main-nav-item-link:focus {
-    color: #fff; }
+    color: #ffdf09;
+    text-decoration: none; }
 
 .hero {
   position: relative;
@@ -6111,31 +6140,19 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   width: 50%; }
-  .hero-caption h1, .hero-caption h2 {
-    font-family: 'MontserratBold';
-    text-transform: uppercase; }
   .hero-caption h2 {
     margin-bottom: 120px; }
 
-.btn.btn-yellow {
-  background: #ffdf09;
-  color: #161b20;
-  font-family: 'MontserratBold';
-  padding: 10px 50px; }
+.intro {
+  margin-bottom: 100px; }
 
-.facts, .team, .gallery {
+.facts, .team, .gallery, .contact {
   padding-top: 50px;
   padding-bottom: 120px; }
 
 .facts {
   color: #161b20;
   background: #dfdfe1; }
-  .facts h3 {
-    font-family: 'MontserratBold';
-    text-transform: uppercase; }
-
-.intro {
-  margin-bottom: 100px; }
 
 .facts-box {
   font-family: 'MerriweatherLight'; }
@@ -6145,9 +6162,6 @@ body {
 
 .intro-text {
   font-family: 'MerriweatherLight'; }
-  .intro-text h2, .intro-text h3 {
-    font-family: 'MontserratBold';
-    text-transform: uppercase; }
 
 .facts-box-img {
   position: relative;
@@ -6160,11 +6174,28 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
+.team-members {
+  margin-bottom: 50px; }
+  .team-members h3 {
+    word-spacing: 40px; }
+  .team-members div {
+    font-family: 'MontserratRegular'; }
+
+.team-member > a {
+  display: block;
+  color: #fff; }
+
 .gallery {
   background: #161b20; }
 
 .gallery-content {
   margin-bottom: 30px; }
+
+.contact {
+  background: #dfdfe1;
+  color: #161b20; }
+  .contact input {
+    margin-bottom: 23px; }
 
 .footer {
   color: #484d52;
