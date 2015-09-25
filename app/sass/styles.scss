@@ -8,22 +8,22 @@ $color-middle-dark-grey: #43484e;
 $color-yellow: #ffdf09;
 
 
-@font-face{ 
+@font-face{
 	font-family: 'MontserratRegular';
 	src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
-@font-face{ 
+@font-face{
 	font-family: 'MontserratBold';
 	src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
-@font-face{ 
+@font-face{
 	font-family: 'MerriweatherLight';
 	src: url('../fonts/Merriweather-Light.ttf') format('truetype');
 }
 
-@font-face{ 
+@font-face{
 	font-family: 'MerriweatherLightItalic';
 	src: url('../fonts/Merriweather-LightItalic.ttf') format('truetype');
 }
@@ -33,6 +33,7 @@ html, body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+	font-family: 'Myriad Pro Regular';
 }
 
 body {
@@ -44,11 +45,42 @@ h1, h2, h3, h4 {
 	text-transform: uppercase;
 }
 
+h1 {
+	font-size: 48px;
+
+	& small {
+		font-size: 30px;
+		color: $color-white;
+		margin-top: 30px;
+	}
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+
+.block {
+	display: block;
+}
+
 .btn {
+	font-family: 'MontserratBold';
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 120px;
+
 	&.btn-yellow {
 		background: $color-yellow;
 		color: $color-dark-blue;
-		font-family: 'MontserratBold';
 		padding: 10px 50px;
 	}
 }
@@ -61,7 +93,7 @@ h1, h2, h3, h4 {
 	background: transparent;
 	position: absolute;
 	width: 100%;
-	
+
 	&.sticky {
 		background: $color-middle-dark-grey;
 		position: fixed;
@@ -84,7 +116,7 @@ h1, h2, h3, h4 {
 .main-nav-list {
 	& .main-nav-item {
 		padding-left: 25px;
-	}	
+	}
 }
 
 .main-nav-item {
@@ -99,9 +131,10 @@ h1, h2, h3, h4 {
 	color: $color-white;
 	text-transform: uppercase;
 	font-family: 'MontserratBold';
+	font-size: 14px;
 	position: relative;
 	top: 7px;
-	
+
 	&:hover, &:focus {
 		color: $color-yellow;
 		text-decoration: none;
@@ -130,7 +163,7 @@ h1, h2, h3, h4 {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	width: 50%;
-	
+
 	& h2 {
 		margin-bottom: 120px;
 	}
@@ -159,7 +192,7 @@ h1, h2, h3, h4 {
 
 .facts-box {
 	font-family: 'MerriweatherLight';
-	
+
 	& > div {
 		background: $color-white;
 		padding: 20px 25px 20px 25px;
@@ -168,6 +201,7 @@ h1, h2, h3, h4 {
 
 .intro-text {
 	font-family: 'MerriweatherLight';
+	font-size: 18px;
 }
 
 .facts-box-img {
@@ -176,7 +210,7 @@ h1, h2, h3, h4 {
 }
 
 .team {
-	background: url(../img/background-team.png) no-repeat center center; 
+	background: url(../img/background-team.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -185,22 +219,27 @@ h1, h2, h3, h4 {
 
 .team-members {
 	margin-bottom: 50px;
-	
-	& h3 {
-		word-spacing: 40px; 
-	}
-	
+
 	& div {
 		font-family: 'MontserratRegular';
 	}
 }
 
 .team-member {
-	
+
 	& > a {
 		display: block;
 		color: $color-white;
 	}
+
+	& h4 {
+		margin-top: 40px;
+		word-spacing: 60px;
+	}
+}
+
+.team-position, .team-data {
+	font-size: 12px;
 }
 
 .gallery {
@@ -214,11 +253,11 @@ h1, h2, h3, h4 {
 .contact {
 	background: $color-light-grey;
 	color: $color-dark-blue;
-	
+
 	& input {
 		margin-bottom: 23px;
 	}
-	
+
 }
 
 
@@ -230,4 +269,3 @@ h1, h2, h3, h4 {
 	padding-top: 35px;
 	padding-bottom: 30px;
 }
-

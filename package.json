@@ -28,6 +28,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
     "jade": "^1.11.0",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "scrollreveal": "^2.3.2"
   }
 }

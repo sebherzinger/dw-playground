@@ -6079,7 +6079,8 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Myriad Pro Regular'; }
 
 body {
   color: #fff; }
@@ -6088,11 +6089,34 @@ h1, h2, h3, h4 {
   font-family: 'MontserratBold';
   text-transform: uppercase; }
 
-.btn.btn-yellow {
-  background: #ffdf09;
-  color: #161b20;
+h1 {
+  font-size: 48px; }
+  h1 small {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 30px; }
+
+h2 {
+  font-size: 36px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+.block {
+  display: block; }
+
+.btn {
   font-family: 'MontserratBold';
-  padding: 10px 50px; }
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 120px; }
+  .btn.btn-yellow {
+    background: #ffdf09;
+    color: #161b20;
+    padding: 10px 50px; }
 
 .header {
   background: transparent;
@@ -6124,6 +6148,7 @@ h1, h2, h3, h4 {
   color: #fff;
   text-transform: uppercase;
   font-family: 'MontserratBold';
+  font-size: 14px;
   position: relative;
   top: 7px; }
   .main-nav-item-link:hover, .main-nav-item-link:focus {
@@ -6168,7 +6193,8 @@ h1, h2, h3, h4 {
     padding: 20px 25px 20px 25px; }
 
 .intro-text {
-  font-family: 'MerriweatherLight'; }
+  font-family: 'MerriweatherLight';
+  font-size: 18px; }
 
 .facts-box-img {
   position: relative;
@@ -6183,14 +6209,19 @@ h1, h2, h3, h4 {
 
 .team-members {
   margin-bottom: 50px; }
-  .team-members h3 {
-    word-spacing: 40px; }
   .team-members div {
     font-family: 'MontserratRegular'; }
 
 .team-member > a {
   display: block;
   color: #fff; }
+
+.team-member h4 {
+  margin-top: 40px;
+  word-spacing: 60px; }
+
+.team-position, .team-data {
+  font-size: 12px; }
 
 .gallery {
   background: #161b20; }

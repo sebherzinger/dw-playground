@@ -14,9 +14,9 @@
     <header id="header" class="header">
       <div class="container">
         <div class="row header-container">
-          <div class="col-xs-2"><a href="#" title="Home Link" id="js-toTop"><img src="./assets/img/logo-small.png" alt="Rocket Logo Small"></a></div>
+          <div class="col-xs-2"><a href="#" title="Home Link" id="js-toTop" data-sr="scale down 200%, wait 4.4s, over 1.3s"><img src="./assets/img/logo-small.png" alt="Rocket Logo Small"></a></div>
           <div class="col-xs-10 text-right main-nav-container">
-            <ul class="list-unstyled list-inline main-nav-list">
+            <ul data-sr="scale down 200%, wait 4.4s, over 1.3s" class="list-unstyled list-inline main-nav-list">
               <li class="main-nav-item"><a href="#" data-name="facts" title="Link 01" class="js-scrollTo main-nav-item-link">About Us</a></li>
               <li class="main-nav-item"> <a href="#" data-name="team" title="Link 02" class="js-scrollTo main-nav-item-link">The Team</a></li>
               <li class="main-nav-item"> <a href="#" data-name="gallery" title="Link 03" class="js-scrollTo main-nav-item-link">Impressions</a></li>
@@ -29,21 +29,20 @@
     <section id="hero" class="hero">
       <div class="hero-img"><img src="./assets/img/hero-01.png" alt="Hero Bild 01" class="img-responsive hero-img"></div>
       <div class="hero-caption text-center">
-        <h1>Hey there, we are spacecowboy</h1>
-        <h2>- an independent space agency - </h2>
-        <button type="button" data-name="facts" class="btn btn-yellow js-scrollTo">Learn more</button>
+        <h1> <span data-sr="wait 0.1s, scale up 80%">H</span><span data-sr="wait 0.2s, scale up 75%">e</span><span data-sr="wait 0.3s, scale up 70%">y </span><span data-sr="wait 0.4s, scale up 65%">t</span><span data-sr="wait 0.5s, scale up 60%">h</span><span data-sr="wait 0.6s, scale up 55%">e</span><span data-sr="wait 0.7s, scale up 50%">r</span><span data-sr="wait 0.8s, scale up 45%">e, </span><span data-sr="wait 0.9s, scale up 40%">w</span><span data-sr="wait 1.0s, scale up 35%">e  </span><span data-sr="wait 1.1s, scale up 30%">a</span><span data-sr="wait 1.2s, scale up 25%">r</span><span data-sr="wait 1.3s, scale up 20%">e </span><span data-sr="wait 2.3s, scale down 300%, over 1.3s">spacecowboy	</span><small data-sr="wait 3.8s, scale down 200%, over 1.3s" class="block">- an independent space agency - </small></h1>
+        <button type="button" data-name="facts" data-sr="wait 4.3s, scale down 100%, over 1.3s" class="btn btn-yellow js-scrollTo">Learn more</button>
       </div>
     </section>
     <section id="facts" class="facts">
       <div class="container">
         <div class="row intro">
-          <div class="col-xs-12 intro-text text-center">
+          <div data-sr="scale down 50%" class="col-xs-12 intro-text text-center">
             <h2>A few facts about us</h2>
             <div>Before you do business with us, </div>
             <div>you might want to know a little bit more about our company:</div>
           </div>
         </div>
-        <div data-sr class="row facts-boxes">
+        <div data-sr="" class="row facts-boxes">
           <div class="col-xs-12 col-sm-4 facts-box text-center">
             <div><img src="./assets/img/facts-box-cowboy.png" alt="Icon Cowboy" class="facts-box-img">
               <h3>We are cowboys</h3>
@@ -68,61 +67,61 @@
     <section id="team" class="team">
       <div class="container">
         <div class="row intro">
-          <div class="col-xs-12 intro-text text-center">
+          <div data-sr="scale up 50%" class="col-xs-12 intro-text text-center">
             <h2>The team</h2>
             <div>Yep, that‘s us. Six fine fellows, eager to get on the next adventure.</div>
             <div>Click on the pictures to get some more information!</div>
           </div>
         </div>
         <div data-sr class="row team-members text-center">
-          <div class="col-xs-4 team-member"><a href="#" title="Cowboy 1" class="row">
+          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 1" class="row">
               <div class="col-xs-6"><img src="./assets/img/cowboy-01.png" alt="Cowboy 1" class="img-responsive"></div>
               <div class="col-xs-6 text-left">
-                <h3>Dick Harvey</h3>
+                <h4>Dick Harvey</h4>
                 <p class="team-position">Captain</p>
                 <div class="team-data">
                   <div>Age: 56</div>
                   <div>Missions: 13					</div>
                 </div>
               </div></a></div>
-          <div class="col-xs-4 team-member"><a href="#" title="Cowboy 2" class="row">
+          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 2" class="row">
               <div class="col-xs-6"><img src="./assets/img/cowboy-02.png" alt="Cowboy 2" class="img-responsive"></div>
               <div class="col-xs-6 text-left">
-                <h3>Richie Farhem</h3>
-                <p>Captain</p>
-                <div>
+                <h4>Richie Farhem</h4>
+                <p class="team-position">Captain</p>
+                <div class="team-data">
                   <div>Age: 48</div>
                   <div>Missions: 13</div>
                 </div>
               </div></a></div>
-          <div class="col-xs-4 team-member"><a href="#" title="Cowboy 3" class="row">
+          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 3" class="row">
               <div class="col-xs-6"><img src="./assets/img/cowboy-03.png" alt="Cowboy 3" class="img-responsive"></div>
               <div class="col-xs-6 text-left">
-                <h3>John Siracha</h3>
-                <p>Captain</p>
-                <div>
+                <h4>John Siracha</h4>
+                <p class="team-position">Captain</p>
+                <div class="team-data">
                   <div>Age: 47</div>
-                  <div>Missions: 13</div>
+                  <div>Missions: 13				</div>
                 </div>
               </div></a></div>
         </div>
         <div data-sr class="row team-members text-center">
-          <div class="col-xs-4 col-xs-offset-2 team-member"><a href="#" title="Cowboy 4" class="row">
+          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 4" class="row">
               <div class="col-xs-6"><img src="./assets/img/cowboy-04.png" alt="Cowboy 4" class="img-responsive"></div>
               <div class="col-xs-6 text-left">
-                <h3>Bert McNamara</h3>
-                <p>Captain</p>
-                <div>
+                <h4>Bert McNamara</h4>
+                <p class="team-position">Captain</p>
+                <div class="team-data">
                   <div>Age: 71</div>
                   <div>Missions: 13</div>
                 </div>
               </div></a></div>
-          <div class="col-xs-4 team-member"><a href="#" title="Cowboy 5" class="row">
+          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 5" class="row">
               <div class="col-xs-6"><img src="./assets/img/cowboy-05.png" alt="Cowboy 5" class="img-responsive"></div>
               <div class="col-xs-6 text-left">
-                <h3>Al Sveringe</h3>
-                <p>CEO</p>
-                <div>
+                <h4>Al Sveringe</h4>
+                <p class="team-position">CEO</p>
+                <div class="team-data">
                   <div>Age: 76</div>
                   <div>Missions: 13</div>
                 </div>
@@ -133,7 +132,7 @@
     <section id="gallery" class="gallery">
       <div class="container">
         <div class="row intro">
-          <div class="col-xs-12 intro-text text-center">
+          <div data-sr="scale up 50%" class="col-xs-12 intro-text text-center">
             <h2>Look at all those stars!</h2>
             <div>Some impressions from our trips to frickin outer space, enjoy!</div>
           </div>
@@ -159,14 +158,14 @@
     <section id="contact" class="contact">
       <div class="container">
         <div class="row intro">
-          <div class="col-xs-12 intro-text text-center">
+          <div data-sr="scale down 50%" class="col-xs-12 intro-text text-center">
             <h2>Say Hello</h2>
             <div>Got some questions about us? Wanna do business with us? </div>
             <div>Or do you just want to send us your latest cat-content - there you go:</div>
           </div>
         </div>
         <form data-sr class="row">
-          <div class="col-xs-3 col-xs-offset-3">
+          <div class="col-xs-12 col-sm-3 col-sm-offset-3">
             <div class="row">
               <div class="col-xs-12">
                 <input type="text" id="example01" placeholder="First Name" class="form-control">
