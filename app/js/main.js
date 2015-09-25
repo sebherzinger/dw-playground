@@ -10,8 +10,7 @@ $(function() {
 		} else{
 			$('#header').removeClass("sticky");
 		}
-
-
+		
 	});
 
 	$('section').each(function() {

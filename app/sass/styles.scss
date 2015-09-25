@@ -41,6 +41,14 @@ p, span, li, a {
 	font-family: 'Droid Sans', sans-serif;
 }
 
+.form-control {
+  &:focus {
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
 h1, h2, h3, h4 {
 	font-family: 'MontserratBold';
 	text-transform: uppercase;
@@ -305,4 +313,20 @@ a {
 	background: $color-dark-blue;
 	padding-top: 35px;
 	padding-bottom: 30px;
+}
+
+
+
+.parsley-errors-list {
+  list-style-type: none;
+}
+
+.form-control {
+  &.parsley-success {
+    border: 1px solid green;
+  }
+    &.parsley-error {
+      border: 1px solid red;
+    }
+
 }

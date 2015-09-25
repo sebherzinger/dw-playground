@@ -208,35 +208,36 @@
             <div>Or do you just want to send us your latest cat-content - there you go:</div>
           </div>
         </div>
-        <form data-sr class="row">
+        <form data-sr data-parsley-validate data-parsley-trigger="keyup change keydown" class="row">
           <div class="col-xs-12 col-sm-3 col-sm-offset-3">
             <div class="row">
               <div class="col-xs-12">
-                <input type="text" id="example01" placeholder="First Name" class="form-control">
+                <input type="text" id="example01" placeholder="First Name" required data-parsley-minlength="2" class="form-control">
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12">
-                <input type="text" id="example02" placeholder="Last Name" class="form-control col-xs-8">
+                <input type="text" id="example02" placeholder="Last Name" required class="form-control col-xs-8">
               </div>
             </div>
             <div class="row">
               <div class="col-xs-12">
-                <input type="email" id="example03" placeholder="E-Mail" class="form-control col-xs-4">
+                <input type="email" id="example03" placeholder="E-Mail" required data-parsley-type="email" data-parsley-minlength="6" class="form-control col-xs-4">
               </div>
             </div>
           </div>
           <div class="col-xs-3">
             <div class="row">
               <div class="col-xs-12">
-                <textarea rows="7" class="form-control"></textarea>
+                <textarea rows="7" class="form-control"> </textarea>
               </div>
+              <button type="submit" class="btn btn-yellow">Send that mail</button>
             </div>
           </div>
         </form>
         <div class="row">
           <div class="col-xs-12 text-center">
-            <button type="button" class="btn btn-yellow">Send that mail</button>
+            <!--button(type='submit' class='btn btn-yellow') Send that mail-->
           </div>
         </div>
       </div>
