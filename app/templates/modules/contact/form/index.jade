@@ -1,19 +1,19 @@
-form(class='row' data-sr data-parsley-validate data-parsley-trigger="keyup change keydown")
-    div.col-xs-12.col-sm-3.col-sm-offset-3
-        div.row
-            div.col-xs-12
-                input(type='text' class='form-control' id='example01' placeholder='First Name' required data-parsley-minlength="2")
-        div.row
-            div.col-xs-12
-                input(type='text' class='form-control col-xs-8' id='example02' placeholder='Last Name' required)
-        div.row
-            div.col-xs-12
-                input(type='email' class='form-control col-xs-4' id='example03' placeholder='E-Mail' required data-parsley-type="email" data-parsley-minlength="6")
-    div.col-xs-3
-        div.row
-            div.col-xs-12
-                textarea(class='form-control' rows='7')  
-               button(type='submit' class='btn btn-yellow') Send that mail
-div.row
-    div.col-xs-12.text-center
-        //button(type='submit' class='btn btn-yellow') Send that mail
+form(data-sr data-parsley-validate data-parsley-trigger="keyup change keydown")
+    div.row 
+        div.col-xs-12.col-sm-3.col-sm-offset-3
+            div.row
+                div.col-xs-12
+                    input(type='text' class='form-control' id='example01' placeholder='First Name' required data-parsley-minlength="2" data-parsley-error-message="This field is required (min. 2 chars)")
+            div.row
+                div.col-xs-12
+                    input(type='text' class='form-control col-xs-8' id='example02' placeholder='Last Name' required data-parsley-error-message="This field is required")
+            div.row
+                div.col-xs-12
+                    input(type='email' class='form-control col-xs-4' id='example03' placeholder='E-Mail' required data-parsley-type="email" data-parsley-minlength="4" data-parsley-error-message="Sorry, that's not an valid E-Mail address")
+        div.col-xs-3
+            div.row
+                div.col-xs-12
+                    textarea(class='form-control' rows='8')
+    div.row
+        div.col-xs-12.text-center
+            button(type='submit' class='btn btn-yellow') Send that mail  

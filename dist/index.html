@@ -208,38 +208,39 @@
             <div>Or do you just want to send us your latest cat-content - there you go:</div>
           </div>
         </div>
-        <form data-sr data-parsley-validate data-parsley-trigger="keyup change keydown" class="row">
-          <div class="col-xs-12 col-sm-3 col-sm-offset-3">
-            <div class="row">
-              <div class="col-xs-12">
-                <input type="text" id="example01" placeholder="First Name" required data-parsley-minlength="2" class="form-control">
+        <form data-sr data-parsley-validate data-parsley-trigger="keyup change keydown">
+          <div class="row"> 
+            <div class="col-xs-12 col-sm-3 col-sm-offset-3">
+              <div class="row">
+                <div class="col-xs-12">
+                  <input type="text" id="example01" placeholder="First Name" required data-parsley-minlength="2" data-parsley-error-message="This field is required (min. 2 chars)" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <input type="text" id="example02" placeholder="Last Name" required data-parsley-error-message="This field is required" class="form-control col-xs-8">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <input type="email" id="example03" placeholder="E-Mail" required data-parsley-type="email" data-parsley-minlength="4" data-parsley-error-message="Sorry, that's not an valid E-Mail address" class="form-control col-xs-4">
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <input type="text" id="example02" placeholder="Last Name" required class="form-control col-xs-8">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-xs-12">
-                <input type="email" id="example03" placeholder="E-Mail" required data-parsley-type="email" data-parsley-minlength="6" class="form-control col-xs-4">
+            <div class="col-xs-3">
+              <div class="row">
+                <div class="col-xs-12">
+                  <textarea rows="8" class="form-control"></textarea>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-xs-3">
-            <div class="row">
-              <div class="col-xs-12">
-                <textarea rows="7" class="form-control"> </textarea>
-              </div>
-              <button type="submit" class="btn btn-yellow">Send that mail</button>
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <button type="submit" class="btn btn-yellow">Send that mail  </button>
             </div>
           </div>
         </form>
-        <div class="row">
-          <div class="col-xs-12 text-center">
-            <!--button(type='submit' class='btn btn-yellow') Send that mail-->
-          </div>
-        </div>
       </div>
     </section>
     <footer id="footer" class="footer">

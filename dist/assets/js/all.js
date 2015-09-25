@@ -19,20 +19,28 @@ $(function() {
 	window.sr = new scrollReveal();
 
 	$(window).scroll( function() {
+		
+		var scrollTop = $(window).scrollTop();
+		
+		$('section').each(function() {
+			var thisPosition = $(this).offset().top;
+			
+			if((thisPosition - $('#header').height()) < scrollTop) {
+				$(console.log($(this).attr('id')));
+				$('.main-nav-item').removeClass('active');
+				$('*[data-name="'+ $(this).attr('id') +'"]').parent().addClass('active');
+			}
+			
+		});
 
 		if ( $(this).scrollTop() > 1 ) {
 			$('#header').addClass("sticky");
-			//$('.main-nav-item:first-child').addClass('active');
 		} else{
 			$('#header').removeClass("sticky");
 		}
 		
 	});
 
-	$('section').each(function() {
-
-
-	});
 
 	$('#js-toTop').on('click', function(e) {
 		$("html, body").animate({
