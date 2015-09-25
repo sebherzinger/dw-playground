@@ -9,28 +9,62 @@
     <meta name="author" content="Sebastian Lukas Herzinger">
     <title>dw-playground</title>
     <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
   </head>
   <body>
     <header id="header" class="header">
       <div class="container">
         <div class="row header-container">
-          <div class="col-xs-2"><a href="#" title="Home Link" id="js-toTop" data-sr="scale down 200%, wait 4.4s, over 1.3s"><img src="./assets/img/logo-small.png" alt="Rocket Logo Small"></a></div>
+          <div class="col-xs-2"><a href="#" title="Home Link" id="js-toTop"><img src="./assets/img/logo-small.png" alt="Rocket Logo Small"></a></div>
           <div class="col-xs-10 text-right main-nav-container">
-            <ul data-sr="scale down 200%, wait 4.4s, over 1.3s" class="list-unstyled list-inline main-nav-list">
+            <ul class="list-unstyled list-inline main-nav-list">
               <li class="main-nav-item"><a href="#" data-name="facts" title="Link 01" class="js-scrollTo main-nav-item-link">About Us</a></li>
-              <li class="main-nav-item"> <a href="#" data-name="team" title="Link 02" class="js-scrollTo main-nav-item-link">The Team</a></li>
-              <li class="main-nav-item"> <a href="#" data-name="gallery" title="Link 03" class="js-scrollTo main-nav-item-link">Impressions</a></li>
-              <li class="main-nav-item"> <a href="#" data-name="contact" title="Link 04" class="js-scrollTo main-nav-item-link">Contact</a></li>
+              <li class="main-nav-item"><a href="#" data-name="team" title="Link 02" class="js-scrollTo main-nav-item-link">The Team</a></li>
+              <li class="main-nav-item"><a href="#" data-name="gallery" title="Link 03" class="js-scrollTo main-nav-item-link">Impressions</a></li>
+              <li class="main-nav-item"><a href="#" data-name="contact" title="Link 04" class="js-scrollTo main-nav-item-link">Contact</a></li>
             </ul>
           </div>
         </div>
+        <!--
+        div.col-xs-2
+        	a(href='#' title='Home Link' id="js-toTop" data-sr='scale down 200%, wait 4.4s, over 1.3s')
+        		img(src='./assets/img/logo-small.png' alt='Rocket Logo Small')
+        div.col-xs-10.text-right.main-nav-container
+        	ul(class='list-unstyled list-inline main-nav-list' data-sr='scale down 200%, wait 4.4s, over 1.3s')
+        		li.main-nav-item
+        			a(href='#' class='js-scrollTo main-nav-item-link' data-name='facts' title='Link 01') About Us
+        		li.main-nav-item
+        			a(href='#' class='js-scrollTo main-nav-item-link' data-name='team' title='Link 02') The Team
+        		li.main-nav-item
+        			a(href='#' class='js-scrollTo main-nav-item-link' data-name='gallery' title='Link 03') Impressions
+        		li.main-nav-item
+        			a(href='#' class='js-scrollTo main-nav-item-link' data-name='contact' title='Link 04') Contact
+        -->
       </div>
     </header>
     <section id="hero" class="hero">
       <div class="hero-img"><img src="./assets/img/hero-01.png" alt="Hero Bild 01" class="img-responsive hero-img"></div>
       <div class="hero-caption text-center">
-        <h1> <span data-sr="wait 0.1s, scale up 80%">H</span><span data-sr="wait 0.2s, scale up 75%">e</span><span data-sr="wait 0.3s, scale up 70%">y </span><span data-sr="wait 0.4s, scale up 65%">t</span><span data-sr="wait 0.5s, scale up 60%">h</span><span data-sr="wait 0.6s, scale up 55%">e</span><span data-sr="wait 0.7s, scale up 50%">r</span><span data-sr="wait 0.8s, scale up 45%">e, </span><span data-sr="wait 0.9s, scale up 40%">w</span><span data-sr="wait 1.0s, scale up 35%">e  </span><span data-sr="wait 1.1s, scale up 30%">a</span><span data-sr="wait 1.2s, scale up 25%">r</span><span data-sr="wait 1.3s, scale up 20%">e </span><span data-sr="wait 2.3s, scale down 300%, over 1.3s">spacecowboy	</span><small data-sr="wait 3.8s, scale down 200%, over 1.3s" class="block">- an independent space agency - </small></h1>
-        <button type="button" data-name="facts" data-sr="wait 4.3s, scale down 100%, over 1.3s" class="btn btn-yellow js-scrollTo">Learn more</button>
+        <h1> <span class="block">Hey there, we are</span><span class="block">spacecowboy</span><small class="block">- an independent space agency -</small></h1>
+        <button type="button" data-name="facts" class="btn btn-yellow js-scrollTo">Learn more</button>
+        <!--
+        span(data-sr='wait 0.1s, scale up 80%') H
+        span(data-sr='wait 0.2s, scale up 75%') e
+        span(data-sr='wait 0.3s, scale up 70%') y
+        span(data-sr='wait 0.4s, scale up 65%') t
+        span(data-sr='wait 0.5s, scale up 60%') h
+        span(data-sr='wait 0.6s, scale up 55%') e
+        span(data-sr='wait 0.7s, scale up 50%') r
+        span(data-sr='wait 0.8s, scale up 45%') e,
+        span(data-sr='wait 0.9s, scale up 40%') w
+        span(data-sr='wait 1.0s, scale up 35%') e
+        span(data-sr='wait 1.1s, scale up 30%') a
+        span(data-sr='wait 1.2s, scale up 25%') r
+        span(data-sr='wait 1.3s, scale up 20%') e
+        span(data-sr='wait 2.3s, scale down 300%, over 1.3s') spacecowboy
+        small(class='block' data-sr='wait 3.8s, scale down 200%, over 1.3s') - an independent space agency -
+        -->
+        <!-- button(type='button' class='btn btn-yellow js-scrollTo' data-name='facts' data-sr='wait 4.3s, scale down 100%, over 1.3s') Learn more-->
       </div>
     </section>
     <section id="facts" class="facts">
@@ -52,7 +86,7 @@
           <div class="col-xs-12 col-sm-4 facts-box text-center">
             <div><img src="./assets/img/facts-box-tools.png" alt="Icon Tools" class="facts-box-img">
               <h3>We like to tinker</h3>
-              <p>There are a lot of things lying around on a typical Cowboy Ranch. So we started putting them together, and got really good at rocket building.  </p>
+              <p>There are a lot of things lying around on a typical Cowboy Ranch. So we started putting them together, and got really good at rocket building.</p>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 facts-box text-center">
@@ -74,56 +108,66 @@
           </div>
         </div>
         <div data-sr class="row team-members text-center">
-          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 1" class="row">
-              <div class="col-xs-6"><img src="./assets/img/cowboy-01.png" alt="Cowboy 1" class="img-responsive"></div>
-              <div class="col-xs-6 text-left">
-                <h4>Dick Harvey</h4>
-                <p class="team-position">Captain</p>
-                <div class="team-data">
-                  <div>Age: 56</div>
-                  <div>Missions: 13					</div>
+          <div class="col-xs-12 col-sm-4 team-member"><a href="#" title="Cowboy 1">
+              <div class="row">
+                <div class="col-xs-6"><img src="./assets/img/cowboy-01.png" alt="Cowboy 1" class="img-responsive"></div>
+                <div class="col-xs-6 text-left">
+                  <h4>Dick Harvey</h4>
+                  <p class="team-position">Captain</p>
+                  <div class="team-data">
+                    <div>Age: 56</div>
+                    <div>Missions: 13</div>
+                  </div>
                 </div>
               </div></a></div>
-          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 2" class="row">
-              <div class="col-xs-6"><img src="./assets/img/cowboy-02.png" alt="Cowboy 2" class="img-responsive"></div>
-              <div class="col-xs-6 text-left">
-                <h4>Richie Farhem</h4>
-                <p class="team-position">Captain</p>
-                <div class="team-data">
-                  <div>Age: 48</div>
-                  <div>Missions: 13</div>
+          <div class="col-xs-12 col-sm-4 team-member"><a href="#" title="Cowboy 2">
+              <div class="row">
+                <div class="col-xs-6"><img src="./assets/img/cowboy-02.png" alt="Cowboy 2" class="img-responsive"></div>
+                <div class="col-xs-6 text-left">
+                  <h4>Richie Farhem</h4>
+                  <p class="team-position">Captain</p>
+                  <div class="team-data">
+                    <div>Age: 48</div>
+                    <div>Missions: 13</div>
+                  </div>
                 </div>
               </div></a></div>
-          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 3" class="row">
-              <div class="col-xs-6"><img src="./assets/img/cowboy-03.png" alt="Cowboy 3" class="img-responsive"></div>
-              <div class="col-xs-6 text-left">
-                <h4>John Siracha</h4>
-                <p class="team-position">Captain</p>
-                <div class="team-data">
-                  <div>Age: 47</div>
-                  <div>Missions: 13				</div>
+          <div class="col-xs-12 col-sm-4 team-member"><a href="#" title="Cowboy 3">
+              <div class="row">
+                <div class="col-xs-6"><img src="./assets/img/cowboy-03.png" alt="Cowboy 3" class="img-responsive"></div>
+                <div class="col-xs-6 text-left">
+                  <h4>John Siracha</h4>
+                  <p class="team-position">Captain</p>
+                  <div class="team-data">
+                    <div>Age: 47</div>
+                    <div>Missions: 13</div>
+                  </div>
                 </div>
               </div></a></div>
         </div>
         <div data-sr class="row team-members text-center">
-          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 4" class="row">
-              <div class="col-xs-6"><img src="./assets/img/cowboy-04.png" alt="Cowboy 4" class="img-responsive"></div>
-              <div class="col-xs-6 text-left">
-                <h4>Bert McNamara</h4>
-                <p class="team-position">Captain</p>
-                <div class="team-data">
-                  <div>Age: 71</div>
-                  <div>Missions: 13</div>
+          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 4">
+              <div class="row">
+                <div class="col-xs-6"><img src="./assets/img/cowboy-04.png" alt="Cowboy 4" class="img-responsive"></div>
+                <div class="col-xs-6 text-left">
+                  <h4>Bert McNamara</h4>
+                  <p class="team-position">Captain</p>
+                  <div class="team-data">
+                    <div>Age: 71</div>
+                    <div>Missions: 13</div>
+                  </div>
                 </div>
               </div></a></div>
-          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 5" class="row">
-              <div class="col-xs-6"><img src="./assets/img/cowboy-05.png" alt="Cowboy 5" class="img-responsive"></div>
-              <div class="col-xs-6 text-left">
-                <h4>Al Sveringe</h4>
-                <p class="team-position">CEO</p>
-                <div class="team-data">
-                  <div>Age: 76</div>
-                  <div>Missions: 13</div>
+          <div class="col-xs-12 col-sm-4 team-member"><a href="#" title="Cowboy 5">
+              <div class="row">
+                <div class="col-xs-6"><img src="./assets/img/cowboy-05.png" alt="Cowboy 5" class="img-responsive"></div>
+                <div class="col-xs-6 text-left">
+                  <h4>Al Sveringe</h4>
+                  <p class="team-position">CEO</p>
+                  <div class="team-data">
+                    <div>Age: 76</div>
+                    <div>Missions: 13</div>
+                  </div>
                 </div>
               </div></a></div>
         </div>

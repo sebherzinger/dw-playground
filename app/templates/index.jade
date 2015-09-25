@@ -1,28 +1,28 @@
 doctype html
 html(lang="en")
 	head
-		meta(charset='utf-8')        
-        
+		meta(charset='utf-8')
+
 		meta(name='robots', content='noindex,nofollow')
-		
+
 		meta(name='viewport', content='width=device-width, initial-scale=1')
-		
+
 		meta(name='description', content='')
 		meta(name='keywords', content='')
 		meta(name='author', content='Sebastian Lukas Herzinger')
-		
-		
+
 		title dw-playground
-		
+
 		link(href='./assets/css/styles.css', rel='stylesheet')
+		link(href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet')
 	body
-	
+
 		header#header.header
 			include modules/nav/mainnav.jade
-		
+
 		section#hero.hero
 			include modules/hero/hero.jade
-		
+
 		section(id='facts' class='facts')
 			div.container
 				include modules/facts/intro.jade
@@ -36,13 +36,13 @@ html(lang="en")
 						div
 							img(src='./assets/img/facts-box-tools.png' alt='Icon Tools' class='facts-box-img')
 							h3 We like to tinker
-							p There are a lot of things lying around on a typical Cowboy Ranch. So we started putting them together, and got really good at rocket building.  
+							p There are a lot of things lying around on a typical Cowboy Ranch. So we started putting them together, and got really good at rocket building.
 					div.col-xs-12.col-sm-4.facts-box.text-center
 						div
 							img(src='./assets/img/facts-box-planets.png' alt='Icon Planets' class='facts-box-img')
 							h3 We explore space
 							p Once we got our first proper rocket, everything went quite fast. And now we are the #1 independent space agency in the world. Who would have guessed?
-		
+
 		section(id='team' class='team')
 			div.container
 				include modules/team/intro.jade
@@ -50,14 +50,14 @@ html(lang="en")
 					include modules/team/team-members/members01.jade
 				div(class='row team-members text-center' data-sr)
 					include modules/team/team-members/members02.jade
-		
+
 		section(id='gallery' class='gallery')
 			div.container
 				include modules/gallery/intro.jade
 				include modules/gallery/content/index.jade
-					
-					
-		
+
+
+
 		section(id='contact' class='contact')
 			div.container
 				include modules/contact/intro.jade
@@ -69,5 +69,5 @@ html(lang="en")
 					div.col-xs-12.text-center
 						p Copyright &copy; 2015
 						img(src='./assets/img/logo-footer.png' alt='Footer Logo')
-		
+
 		script(src='./assets/js/all.js')

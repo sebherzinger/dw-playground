@@ -1,0 +1,33 @@
+@mixin transition($duration) {
+    -webkit-transition: $duration;
+    -moz-transition: $duration;
+    -ms-transition: $duration;
+    -o-transition: $duration;
+    transition: $duration;
+}
+
+@mixin transform($scale) {
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  -ms-transform: scale($scale);
+  -o-transform: scale($scale);
+  transform: scale($scale);
+
+}
+
+@mixin roundedCorners($size){
+    -webkit-border-radius: $size + px;
+        -moz-border-radius: $size + px;
+        border-radius: $size + px;
+}
+
+@mixin horizontal-gradient($from, $to, $stop: 10%) {
+  background-color: $from;
+  background-image: -moz-linear-gradient(left, $from -20%, $to $stop);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, $from), color-stop($stop, $to));
+  background-image: -webkit-linear-gradient(left, $from -20%, $to $stop);
+  background-image: -o-linear-gradient(left, $from -20%, $to $stop);
+  background: -ms-linear-gradient(left, $from -20%, $to $stop);
+  background: linear-gradient(to right, $from -20%, $to $stop);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
