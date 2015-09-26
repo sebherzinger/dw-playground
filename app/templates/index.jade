@@ -50,19 +50,29 @@ html(lang="en")
 					include modules/team/team-members/members01.jade
 				div(class='row team-members text-center' data-sr)
 					include modules/team/team-members/members02.jade
-
-		section(id='gallery' class='gallery')
-			div.overlay
-				div.row
-					div.col-xs-2 
-						a(href='#' class='prev') Arrow left
-						
-					div.col-xs-8.text-center
-						img(src='./assets/img/thumb-01-big.png' class="img-responsive")
-						span.img-description bla foo bar
 					
-					div.col-xs-2
-						a(href='#' class='prev') Arrow right
+		section(id='gallery' class='gallery')
+			div.overlay.display-none
+				div.row
+					div.col-xs-2.prev.text-center
+						div.prev-button 
+							a(href='#' class='prev')
+								img(src='./assets/img/prev-img.png' alt='vorheriges Bild' class='js-prevImage')
+						
+					div.col-xs-8
+						div.row
+							div.col-xs-12.text-center
+								a(href='#' class='close-button')
+									img(src='./assets/img/cross-grey.png' alt='Lightbox schliessen' class='js-closeImage')
+						div.row.opened-img.text-center
+							div.col-xs-12
+								img(src='' class='img-responsive big-img' alt='big image' data-id='')
+								div.img-description 
+					
+					div.col-xs-2.next.text-center
+						div.next-button
+							a(href='#' class='prev')
+								img(src='./assets/img/next-img.png' alt='Nächstes Bild' class='js-nextImage')
 			div.container
 				include modules/gallery/intro.jade
 				include modules/gallery/content/index.jade

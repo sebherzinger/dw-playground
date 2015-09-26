@@ -45,8 +45,8 @@
     <section id="hero" class="hero">
       <div class="hero-img"><img src="./assets/img/hero-01.png" alt="Hero Bild 01" class="img-responsive hero-img"></div>
       <div class="hero-caption text-center">
-        <h1> <span data-sr="wait 0.1s, scale up 80%">H</span><span data-sr="wait 0.2s, scale up 75%">e</span><span data-sr="wait 0.3s, scale up 70%">y </span><span data-sr="wait 0.4s, scale up 65%">t</span><span data-sr="wait 0.5s, scale up 60%">h</span><span data-sr="wait 0.6s, scale up 55%">e</span><span data-sr="wait 0.7s, scale up 50%">r</span><span data-sr="wait 0.8s, scale up 45%">e, </span><span data-sr="wait 0.9s, scale up 40%">w</span><span data-sr="wait 1.0s, scale up 35%">e </span><span data-sr="wait 1.1s, scale up 30%">a</span><span data-sr="wait 1.2s, scale up 25%">r</span><span data-sr="wait 1.3s, scale up 20%">e </span><span data-sr="wait 2.3s, scale down 300%, over 1.3s" class="block">spacecowboy</span><small data-sr="wait 3.8s, scale down 200%, over 1.3s" class="block">- an independent space agency -</small></h1>
-        <button type="button" data-name="facts" data-sr="wait 4.3s, scale down 100%, over 1.3s" class="btn btn-yellow js-scrollTo">Learn more</button>
+        <h1> <span data-sr="wait 0.1s, scale up 80%">H</span><span data-sr="wait 0.2s, scale up 75%">e</span><span data-sr="wait 0.3s, scale up 70%">y </span><span data-sr="wait 0.4s, scale up 65%">t</span><span data-sr="wait 0.5s, scale up 60%">h</span><span data-sr="wait 0.6s, scale up 55%">e</span><span data-sr="wait 0.7s, scale up 50%">r</span><span data-sr="wait 0.8s, scale up 45%">e, </span><span data-sr="wait 0.9s, scale up 40%">w</span><span data-sr="wait 1.0s, scale up 35%">e </span><span data-sr="wait 1.1s, scale up 30%">a</span><span data-sr="wait 1.2s, scale up 25%">r</span><span data-sr="wait 1.3s, scale up 20%">e </span><span data-sr="wait 2.3s, scale down 300%, over 1.3s" class="block">spacecowboy</span><small data-sr="wait 2.6s, scale down 150%, over 1.3s" class="block">- an independent space agency -</small></h1>
+        <button type="button" data-name="facts" data-sr="wait 3.5s, scale up 100%, over 1.3s" class="btn btn-yellow js-scrollTo">Learn more</button>
       </div>
     </section>
     <section id="facts" class="facts">
@@ -91,7 +91,7 @@
         </div>
         <div data-sr class="row team-members text-center">
           <div class="col-xs-12 col-sm-4 team-member">
-            <div class="card effect__click row">
+            <div class="card effect__click flipFront row">
               <div class="card__front">
                 <div class="card__text col-xs-12">
                   <div class="row">
@@ -119,7 +119,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 team-member">
-            <div class="card effect__click row">
+            <div class="card effect__click flipBack row">
               <div class="card__front">
                 <div class="card__text col-xs-12">
                   <div class="row">
@@ -177,7 +177,7 @@
         </div>
         <div data-sr class="row team-members text-center">
           <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member">
-            <div class="card effect__click row">
+            <div class="card effect__click flipFront row">
               <div class="card__front">
                 <div class="card__text col-xs-12">
                   <div class="row">
@@ -196,7 +196,7 @@
               <div class="card__back">
                 <div class="card__text col-xs-12">
                   <div class="row">
-                    <div class="col-xs-12 quote"><strong>Bert's famous quote:</strong>
+                    <div class="col-xs-12 quote"><strong>Berts's famous quote:</strong>
                       <p>"This is a small step for me, but a big step, for, like, a small kid"</p>
                     </div>
                   </div>
@@ -205,7 +205,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 team-member">
-            <div class="card effect__click row">
+            <div class="card effect__click flipFront row">
               <div class="card__front">
                 <div class="card__text col-xs-12">
                   <div class="row">
@@ -236,11 +236,24 @@
       </div>
     </section>
     <section id="gallery" class="gallery">
-      <div class="overlay">
+      <div class="overlay display-none">
         <div class="row">
-          <div class="col-xs-2"> <a href="#" class="prev">Arrow left</a></div>
-          <div class="col-xs-8 text-center"><img src="./assets/img/thumb-01-big.png" class="img-responsive"><span class="img-description">bla foo bar</span></div>
-          <div class="col-xs-2"><a href="#" class="prev">Arrow right</a></div>
+          <div class="col-xs-2 prev text-center">
+            <div class="prev-button"> <a href="#" class="prev"><img src="./assets/img/prev-img.png" alt="vorheriges Bild" class="js-prevImage"></a></div>
+          </div>
+          <div class="col-xs-8">
+            <div class="row">
+              <div class="col-xs-12 text-center"><a href="#" class="close-button"><img src="./assets/img/cross-grey.png" alt="Lightbox schliessen" class="js-closeImage"></a></div>
+            </div>
+            <div class="row opened-img text-center">
+              <div class="col-xs-12"><img src="" alt="big image" data-id="" class="img-responsive big-img">
+                <div class="img-description"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-2 next text-center">
+            <div class="next-button"><a href="#" class="prev"><img src="./assets/img/next-img.png" alt="Nächstes Bild" class="js-nextImage"></a></div>
+          </div>
         </div>
       </div>
       <div class="container">
@@ -251,20 +264,20 @@
           </div>
         </div>
         <div data-sr class="row gallery-content"> 
-          <div class="col-xs-4 col-sm-2"><a href="#" title="Thumb 01 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-01.png" alt="Thumb 01"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 02 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-02.png" alt="Thumb 02"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 03 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-03.png" alt="Thumb 03"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 04 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-04.png" alt="Thumb 04"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 05 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-05.png" alt="Thumb 05"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 06 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-06.png" alt="Thumb 06"></a></div>
+          <div class="col-xs-4 col-sm-2"><a href="#" title="Thumb 01 Link" data-open="thumb-01-big.png" data-description="Bild 01 -- Well, this is amazing!" data-id="1" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-01.png" alt="Thumb 01" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 02 Link" data-open="thumb-01-big.png" data-description="Bild 02 -- Well, this is amazing!" data-id="2" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-02.png" alt="Thumb 02" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 03 Link" data-open="thumb-01-big.png" data-description="Bild 03 -- Well, this is amazing!" data-id="3" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-03.png" alt="Thumb 03" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 04 Link" data-open="thumb-01-big.png" data-description="Bild 04 -- Well, this is amazing!" data-id="4" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-04.png" alt="Thumb 04" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 05 Link" data-open="thumb-01-big.png" data-description="Bild 05 -- Well, this is amazing!" data-id="5" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-05.png" alt="Thumb 05" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 06 Link" data-open="thumb-01-big.png" data-description="Bild 06 -- Well, this is amazing!" data-id="6" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-06.png" alt="Thumb 06" class="img-responsive"></a></div>
         </div>
         <div data-sr class="row gallery-content">
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 07 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-07.png" alt="Thumb 07"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 08 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-08.png" alt="Thumb 08"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 09 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-09.png" alt="Thumb 09"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 10 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-10.png" alt="Thumb 10"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 11 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-11.png" alt="Thumb 11"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 12 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-12.png" alt="Thumb 12"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 07 Link" data-open="thumb-01-big.png" data-description="Bild 07 -- Well, this is amazing!" data-id="7" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-07.png" alt="Thumb 07" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 08 Link" data-open="thumb-01-big.png" data-description="Bild 08 -- Well, this is amazing!" data-id="8" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-08.png" alt="Thumb 08" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 09 Link" data-open="thumb-01-big.png" data-description="Bild 09 -- Well, this is amazing!" data-id="9" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-09.png" alt="Thumb 09" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 10 Link" data-open="thumb-01-big.png" data-description="Bild 10 -- Well, this is amazing!" data-id="10" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-10.png" alt="Thumb 10" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 11 Link" data-open="thumb-01-big.png" data-description="Bild 11 -- Well, this is amazing!" data-id="11" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-11.png" alt="Thumb 11" class="img-responsive"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 12 Link" data-open="thumb-01-big.png" data-description="Bild 12 -- Well, this is amazing!" data-id="12" class="gallery-image js-openLightbox block"><img src="./assets/img/thumb-12.png" alt="Thumb 12" class="img-responsive"></a></div>
         </div>
       </div>
     </section>
