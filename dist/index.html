@@ -45,26 +45,8 @@
     <section id="hero" class="hero">
       <div class="hero-img"><img src="./assets/img/hero-01.png" alt="Hero Bild 01" class="img-responsive hero-img"></div>
       <div class="hero-caption text-center">
-        <h1> <span class="block">Hey there, we are</span><span class="block">spacecowboy</span><small class="block">- an independent space agency -</small></h1>
-        <button type="button" data-name="facts" class="btn btn-yellow js-scrollTo">Learn more</button>
-        <!--
-        span(data-sr='wait 0.1s, scale up 80%') H
-        span(data-sr='wait 0.2s, scale up 75%') e
-        span(data-sr='wait 0.3s, scale up 70%') y
-        span(data-sr='wait 0.4s, scale up 65%') t
-        span(data-sr='wait 0.5s, scale up 60%') h
-        span(data-sr='wait 0.6s, scale up 55%') e
-        span(data-sr='wait 0.7s, scale up 50%') r
-        span(data-sr='wait 0.8s, scale up 45%') e,
-        span(data-sr='wait 0.9s, scale up 40%') w
-        span(data-sr='wait 1.0s, scale up 35%') e
-        span(data-sr='wait 1.1s, scale up 30%') a
-        span(data-sr='wait 1.2s, scale up 25%') r
-        span(data-sr='wait 1.3s, scale up 20%') e
-        span(data-sr='wait 2.3s, scale down 300%, over 1.3s') spacecowboy
-        small(class='block' data-sr='wait 3.8s, scale down 200%, over 1.3s') - an independent space agency -
-        -->
-        <!-- button(type='button' class='btn btn-yellow js-scrollTo' data-name='facts' data-sr='wait 4.3s, scale down 100%, over 1.3s') Learn more-->
+        <h1> <span data-sr="wait 0.1s, scale up 80%">H</span><span data-sr="wait 0.2s, scale up 75%">e</span><span data-sr="wait 0.3s, scale up 70%">y </span><span data-sr="wait 0.4s, scale up 65%">t</span><span data-sr="wait 0.5s, scale up 60%">h</span><span data-sr="wait 0.6s, scale up 55%">e</span><span data-sr="wait 0.7s, scale up 50%">r</span><span data-sr="wait 0.8s, scale up 45%">e, </span><span data-sr="wait 0.9s, scale up 40%">w</span><span data-sr="wait 1.0s, scale up 35%">e </span><span data-sr="wait 1.1s, scale up 30%">a</span><span data-sr="wait 1.2s, scale up 25%">r</span><span data-sr="wait 1.3s, scale up 20%">e </span><span data-sr="wait 2.3s, scale down 300%, over 1.3s" class="block">spacecowboy</span><small data-sr="wait 3.8s, scale down 200%, over 1.3s" class="block">- an independent space agency -</small></h1>
+        <button type="button" data-name="facts" data-sr="wait 4.3s, scale down 100%, over 1.3s" class="btn btn-yellow js-scrollTo">Learn more</button>
       </div>
     </section>
     <section id="facts" class="facts">
@@ -108,72 +90,159 @@
           </div>
         </div>
         <div data-sr class="row team-members text-center">
-          <div class="col-xs-12 col-sm-4 team-member"><a href="#" title="Cowboy 1">
-              <div class="row">
-                <div class="col-xs-6"><img src="./assets/img/cowboy-01.png" alt="Cowboy 1" class="img-responsive"></div>
-                <div class="col-xs-6 text-left">
-                  <h4>Dick Harvey</h4>
-                  <p class="team-position">Captain</p>
-                  <div class="team-data">
-                    <div>Age: 56</div>
-                    <div>Missions: 13</div>
+          <div class="col-xs-12 col-sm-4 team-member">
+            <div class="card effect__click row">
+              <div class="card__front">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="./assets/img/cowboy-01.png" alt="Cowboy 1" class="img-responsive"></div>
+                    <div class="col-xs-6 text-left">
+                      <h4>Dick Harvey</h4>
+                      <p class="team-position">Captain</p>
+                      <div class="team-data">
+                        <div>Age: 56</div>
+                        <div>Missions: 13</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div></a></div>
-          <div class="col-xs-12 col-sm-4 team-member"><a href="#" title="Cowboy 2">
-              <div class="row">
-                <div class="col-xs-6"><img src="./assets/img/cowboy-02.png" alt="Cowboy 2" class="img-responsive"></div>
-                <div class="col-xs-6 text-left">
-                  <h4>Richie Farhem</h4>
-                  <p class="team-position">Captain</p>
-                  <div class="team-data">
-                    <div>Age: 48</div>
-                    <div>Missions: 13</div>
+              </div>
+              <div class="card__back">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-12 quote"><strong>Dick's famous quote:</strong>
+                      <p>"This is a small step for me, but a big step, for, like, a small kid"</p>
+                    </div>
                   </div>
                 </div>
-              </div></a></div>
-          <div class="col-xs-12 col-sm-4 team-member"><a href="#" title="Cowboy 3">
-              <div class="row">
-                <div class="col-xs-6"><img src="./assets/img/cowboy-03.png" alt="Cowboy 3" class="img-responsive"></div>
-                <div class="col-xs-6 text-left">
-                  <h4>John Siracha</h4>
-                  <p class="team-position">Captain</p>
-                  <div class="team-data">
-                    <div>Age: 47</div>
-                    <div>Missions: 13</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 team-member">
+            <div class="card effect__click row">
+              <div class="card__front">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="./assets/img/cowboy-02.png" alt="Cowboy 2" class="img-responsive"></div>
+                    <div class="col-xs-6 text-left">
+                      <h4>Richie Farhem</h4>
+                      <p class="team-position">Captain</p>
+                      <div class="team-data">
+                        <div>Age: 48</div>
+                        <div>Missions: 13</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div></a></div>
+              </div>
+              <div class="card__back">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-12 quote"><strong>Richie's famous quote:</strong>
+                      <p>"This is a small step for me, but a big step, for, like, a small kid"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 team-member">
+            <div class="card effect__click row">
+              <div class="card__front">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="./assets/img/cowboy-03.png" alt="Cowboy 3" class="img-responsive"></div>
+                    <div class="col-xs-6 text-left">
+                      <h4>John Siracha</h4>
+                      <p class="team-position">Captain</p>
+                      <div class="team-data">
+                        <div>Age: 47</div>
+                        <div>Missions: 13</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__back">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-12 quote"><strong>John's famous quote:</strong>
+                      <p>"This is a small step for me, but a big step, for, like, a small kid"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div data-sr class="row team-members text-center">
-          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member"><a href="#" title="Cowboy 4">
-              <div class="row">
-                <div class="col-xs-6"><img src="./assets/img/cowboy-04.png" alt="Cowboy 4" class="img-responsive"></div>
-                <div class="col-xs-6 text-left">
-                  <h4>Bert McNamara</h4>
-                  <p class="team-position">Captain</p>
-                  <div class="team-data">
-                    <div>Age: 71</div>
-                    <div>Missions: 13</div>
+          <div class="col-xs-12 col-sm-4 col-sm-offset-2 team-member">
+            <div class="card effect__click row">
+              <div class="card__front">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="./assets/img/cowboy-04.png" alt="Cowboy 4" class="img-responsive"></div>
+                    <div class="col-xs-6 text-left">
+                      <h4>Bert McNamara</h4>
+                      <p class="team-position">Captain</p>
+                      <div class="team-data">
+                        <div>Age: 71</div>
+                        <div>Missions: 13</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div></a></div>
-          <div class="col-xs-12 col-sm-4 team-member"><a href="#" title="Cowboy 5">
-              <div class="row">
-                <div class="col-xs-6"><img src="./assets/img/cowboy-05.png" alt="Cowboy 5" class="img-responsive"></div>
-                <div class="col-xs-6 text-left">
-                  <h4>Al Sveringe</h4>
-                  <p class="team-position">CEO</p>
-                  <div class="team-data">
-                    <div>Age: 76</div>
-                    <div>Missions: 13</div>
+              </div>
+              <div class="card__back">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-12 quote"><strong>Bert's famous quote:</strong>
+                      <p>"This is a small step for me, but a big step, for, like, a small kid"</p>
+                    </div>
                   </div>
                 </div>
-              </div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 team-member">
+            <div class="card effect__click row">
+              <div class="card__front">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-6"><img src="./assets/img/cowboy-05.png" alt="Cowboy 5" class="img-responsive"></div>
+                    <div class="col-xs-6 text-left">
+                      <h4>Al Sveringe</h4>
+                      <p class="team-position">CEO</p>
+                      <div class="team-data">
+                        <div>Age: 76</div>
+                        <div>Missions: 13</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__back">
+                <div class="card__text col-xs-12">
+                  <div class="row">
+                    <div class="col-xs-12 quote"><strong>Al's famous quote:</strong>
+                      <p>"This is a small step for me, but a big step, for, like, a small kid"</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section id="gallery" class="gallery">
+      <div class="overlay">
+        <div class="row">
+          <div class="col-xs-2"> <a href="#" class="prev">Arrow left</a></div>
+          <div class="col-xs-8 text-center"><img src="./assets/img/thumb-01-big.png" class="img-responsive"><span class="img-description">bla foo bar</span></div>
+          <div class="col-xs-2"><a href="#" class="prev">Arrow right</a></div>
+        </div>
+      </div>
       <div class="container">
         <div class="row intro">
           <div data-sr="scale up 50%" class="col-xs-12 intro-text text-center">
@@ -182,20 +251,20 @@
           </div>
         </div>
         <div data-sr class="row gallery-content"> 
-          <div class="col-xs-4 col-sm-2"><a href="#" title="Thumb 01 Link"><img src="./assets/img/thumb-01.png" alt="Thumb 01"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 02 Link"><img src="./assets/img/thumb-02.png" alt="Thumb 02"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 03 Link"><img src="./assets/img/thumb-03.png" alt="Thumb 03"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 04 Link"><img src="./assets/img/thumb-04.png" alt="Thumb 04"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 05 Link"><img src="./assets/img/thumb-05.png" alt="Thumb 05"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 06 Link"><img src="./assets/img/thumb-06.png" alt="Thumb 06"></a></div>
+          <div class="col-xs-4 col-sm-2"><a href="#" title="Thumb 01 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-01.png" alt="Thumb 01"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 02 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-02.png" alt="Thumb 02"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 03 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-03.png" alt="Thumb 03"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 04 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-04.png" alt="Thumb 04"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 05 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-05.png" alt="Thumb 05"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 06 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-06.png" alt="Thumb 06"></a></div>
         </div>
         <div data-sr class="row gallery-content">
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 07 Link"><img src="./assets/img/thumb-07.png" alt="Thumb 07"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 08 Link"><img src="./assets/img/thumb-08.png" alt="Thumb 08"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 09 Link"><img src="./assets/img/thumb-09.png" alt="Thumb 09"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 10 Link"><img src="./assets/img/thumb-10.png" alt="Thumb 10"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 11 Link"><img src="./assets/img/thumb-11.png" alt="Thumb 11"></a></div>
-          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 12 Link"><img src="./assets/img/thumb-12.png" alt="Thumb 12"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 07 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-07.png" alt="Thumb 07"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 08 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-08.png" alt="Thumb 08"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 09 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-09.png" alt="Thumb 09"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 10 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-10.png" alt="Thumb 10"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 11 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-11.png" alt="Thumb 11"></a></div>
+          <div class="col-xs-4 col-sm-2"> <a href="#" title="Thumb 12 Link" data-big="thumb-01-big.png"><img src="./assets/img/thumb-12.png" alt="Thumb 12"></a></div>
         </div>
       </div>
     </section>

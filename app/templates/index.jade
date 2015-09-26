@@ -52,6 +52,17 @@ html(lang="en")
 					include modules/team/team-members/members02.jade
 
 		section(id='gallery' class='gallery')
+			div.overlay
+				div.row
+					div.col-xs-2 
+						a(href='#' class='prev') Arrow left
+						
+					div.col-xs-8.text-center
+						img(src='./assets/img/thumb-01-big.png' class="img-responsive")
+						span.img-description bla foo bar
+					
+					div.col-xs-2
+						a(href='#' class='prev') Arrow right
 			div.container
 				include modules/gallery/intro.jade
 				include modules/gallery/content/index.jade
