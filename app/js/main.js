@@ -71,7 +71,6 @@ $(document).ready(function() {
 	
 	$('.js-nextImage').on('click', function(e) {
 		var nextImageId = parseInt($('.big-img').attr('data-id')) + 1;
-		var activeImageId = parseInt($('.big-img').attr('data-id'));
 		
 		if(nextImageId > cntImages) {
 			setLightboxImage(1);
@@ -97,17 +96,17 @@ $(document).ready(function() {
 	
 	$('.js-closeImage').on('click', function(e) {
 		$('.overlay').fadeOut('slow');
+		
 		e.preventDefault();
 	});
+	
 	
 	
 	function setLightboxImage(id) {
 		var $myImage = $('*[data-id="' + id + '"');
 		$('.big-img').attr('data-id', $myImage.attr('data-id'));
 		$('.img-description').html($myImage.attr('data-description'));
-		$('.big-img').fadeOut('slow');
-		$('.big-img').attr('src', './assets/img/' + $myImage.attr('data-open'));
-		$('.big-img').fadeIn('slow');	
+		$('.big-img').fadeOut('fast').attr('src', './assets/img/' + $myImage.attr('data-open')).fadeIn('fast');
 	}
 
 });

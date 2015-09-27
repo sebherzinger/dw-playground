@@ -3,7 +3,7 @@ div.container
 		div.col-xs-2
 			a(href='#' title='Home Link' id="js-toTop")
 				img(src='./assets/img/logo-small.png' alt='Rocket Logo Small')
-		div.col-xs-10.text-right.main-nav-container
+		div.col-xs-10.text-right.main-nav-container.hidden-xs
 			ul(class='list-unstyled list-inline main-nav-list')
 				li.main-nav-item
 					a(href='#' class='js-scrollTo main-nav-item-link' data-name='facts' title='Link 01') About Us
@@ -13,18 +13,17 @@ div.container
 					a(href='#' class='js-scrollTo main-nav-item-link' data-name='gallery' title='Link 03') Impressions
 				li.main-nav-item
 					a(href='#' class='js-scrollTo main-nav-item-link' data-name='contact' title='Link 04') Contact
-
-	//
-		div.col-xs-2
-			a(href='#' title='Home Link' id="js-toTop" data-sr='scale down 200%, wait 4.4s, over 1.3s')
-				img(src='./assets/img/logo-small.png' alt='Rocket Logo Small')
-		div.col-xs-10.text-right.main-nav-container
-			ul(class='list-unstyled list-inline main-nav-list' data-sr='scale down 200%, wait 4.4s, over 1.3s')
-				li.main-nav-item
-					a(href='#' class='js-scrollTo main-nav-item-link' data-name='facts' title='Link 01') About Us
-				li.main-nav-item
-					a(href='#' class='js-scrollTo main-nav-item-link' data-name='team' title='Link 02') The Team
-				li.main-nav-item
-					a(href='#' class='js-scrollTo main-nav-item-link' data-name='gallery' title='Link 03') Impressions
-				li.main-nav-item
-					a(href='#' class='js-scrollTo main-nav-item-link' data-name='contact' title='Link 04') Contact
+		div.col-xs-3-col-xs-offset-7.main-nav-container.text-right.visible-xs
+			a(href='#' class='mobile-menu') Menu
+section.mobile-menu-container.visible-xs
+			div.row
+				div.col-xs-12
+					ul.list-unstyled.text-center
+						li 
+							a(href='#' class='') About us
+						li 
+							a(href='#' class='') The team
+						li 
+							a(href='#' class='') Impressions
+						li 
+							a(href='#' class='') Contact

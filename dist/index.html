@@ -16,7 +16,7 @@
       <div class="container">
         <div class="row header-container">
           <div class="col-xs-2"><a href="#" title="Home Link" id="js-toTop"><img src="./assets/img/logo-small.png" alt="Rocket Logo Small"></a></div>
-          <div class="col-xs-10 text-right main-nav-container">
+          <div class="col-xs-10 text-right main-nav-container hidden-xs">
             <ul class="list-unstyled list-inline main-nav-list">
               <li class="main-nav-item"><a href="#" data-name="facts" title="Link 01" class="js-scrollTo main-nav-item-link">About Us</a></li>
               <li class="main-nav-item"><a href="#" data-name="team" title="Link 02" class="js-scrollTo main-nav-item-link">The Team</a></li>
@@ -24,23 +24,21 @@
               <li class="main-nav-item"><a href="#" data-name="contact" title="Link 04" class="js-scrollTo main-nav-item-link">Contact</a></li>
             </ul>
           </div>
+          <div class="col-xs-3-col-xs-offset-7 main-nav-container text-right visible-xs"><a href="#" class="mobile-menu">Menu</a></div>
         </div>
-        <!--
-        div.col-xs-2
-        	a(href='#' title='Home Link' id="js-toTop" data-sr='scale down 200%, wait 4.4s, over 1.3s')
-        		img(src='./assets/img/logo-small.png' alt='Rocket Logo Small')
-        div.col-xs-10.text-right.main-nav-container
-        	ul(class='list-unstyled list-inline main-nav-list' data-sr='scale down 200%, wait 4.4s, over 1.3s')
-        		li.main-nav-item
-        			a(href='#' class='js-scrollTo main-nav-item-link' data-name='facts' title='Link 01') About Us
-        		li.main-nav-item
-        			a(href='#' class='js-scrollTo main-nav-item-link' data-name='team' title='Link 02') The Team
-        		li.main-nav-item
-        			a(href='#' class='js-scrollTo main-nav-item-link' data-name='gallery' title='Link 03') Impressions
-        		li.main-nav-item
-        			a(href='#' class='js-scrollTo main-nav-item-link' data-name='contact' title='Link 04') Contact
-        -->
       </div>
+      <section class="mobile-menu-container visible-xs">
+        <div class="row">
+          <div class="col-xs-12">
+            <ul class="list-unstyled text-center">
+              <li> <a href="#">About us</a></li>
+              <li> <a href="#">The team</a></li>
+              <li> <a href="#">Impressions</a></li>
+              <li> <a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </header>
     <section id="hero" class="hero">
       <div class="hero-img"><img src="./assets/img/hero-01.png" alt="Hero Bild 01" class="img-responsive hero-img"></div>
@@ -119,7 +117,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 team-member">
-            <div class="card effect__click flipBack row">
+            <div class="card effect__click flipFront row">
               <div class="card__front">
                 <div class="card__text col-xs-12">
                   <div class="row">
@@ -147,7 +145,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 team-member">
-            <div class="card effect__click row">
+            <div class="card effect__click flipFront row">
               <div class="card__front">
                 <div class="card__text col-xs-12">
                   <div class="row">
@@ -309,7 +307,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xs-3">
+            <div class="col-xs-12 col-sm-3">
               <div class="row">
                 <div class="col-xs-12">
                   <textarea rows="8" class="form-control"></textarea>
