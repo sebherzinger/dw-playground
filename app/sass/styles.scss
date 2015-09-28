@@ -383,6 +383,13 @@ h4 {
 }
 
 .team-member {
+	
+	&:hover {
+		& .img-responsive {
+			@include transform(0.95);
+			@include transition(500ms);
+		}
+	}
 
 	& .card {
 		min-height: 166px;

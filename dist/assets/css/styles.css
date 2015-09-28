@@ -6370,6 +6370,18 @@ h4 {
   .team-members div {
     font-family: 'MontserratRegular'; }
 
+.team-member:hover .img-responsive {
+  -webkit-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  transform: scale(0.95);
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+  transition: 500ms; }
+
 .team-member .card {
   min-height: 166px;
   color: #fff;
