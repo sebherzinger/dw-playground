@@ -6119,17 +6119,16 @@ h3 {
 h4 {
   font-size: 1.8rem; }
 
-a {
-  /*@include transition(250ms);
-	&:hover {
-		@include transition(250ms);
-	}*/ }
-
 .block {
   display: block; }
 
 .display-none {
   display: none; }
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px; } }
 
 .btn {
   font-family: 'MontserratBold';
@@ -6157,12 +6156,14 @@ a {
 .header {
   background: transparent;
   position: absolute;
-  width: 100%;
-  -webkit-transition: 500ms;
-  -moz-transition: 500ms;
-  -ms-transition: 500ms;
-  -o-transition: 500ms;
-  transition: 500ms; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .header {
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      -ms-transition: 500ms;
+      -o-transition: 500ms;
+      transition: 500ms; } }
   @media (max-width: 767px) {
     .header {
       min-height: 100%; } }
@@ -6213,7 +6214,7 @@ a {
   padding-top: 30px; }
   @media (max-width: 767px) {
     .mobile-menu-container {
-      min-height: 400px; } }
+      min-height: 100%; } }
   .mobile-menu-container a {
     color: #fff;
     font-family: 'MontserratBold';
@@ -6232,7 +6233,7 @@ a {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
-  .mobile-menu:hover {
+  .mobile-menu:hover, .mobile-menu:focus {
     color: #fff;
     text-decoration: none; }
   .mobile-menu .close-x {

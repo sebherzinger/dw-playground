@@ -81,13 +81,6 @@ h4 {
 	font-size: 1.8rem;
 }
 
-a {
-	/*@include transition(250ms);
-	&:hover {
-		@include transition(250ms);
-	}*/
-}
-
 
 .block {
 	display: block;
@@ -95,6 +88,13 @@ a {
 
 .display-none {
 	display: none;
+}
+
+.container {
+	@media (max-width: $screen-xs-max) {
+		padding-left: 25px;
+		padding-right: 25px;	
+	}
 }
 
 .btn {
@@ -125,7 +125,10 @@ a {
 	background: transparent;
 	position: absolute;
 	width: 100%;
-  @include transition(500ms);
+	
+	@media (min-width: $screen-sm-min) {
+  		@include transition(500ms);
+	}
   
   @media (max-width: $screen-xs-max) {
 			min-height: 100%;	
@@ -194,7 +197,7 @@ a {
 	padding-top: 30px;
 	
 	@media (max-width: $screen-xs-max) {
-		min-height: 400px;	
+		min-height: 100%;	
 	}
 	
 	& a {
@@ -220,7 +223,8 @@ a {
 	font-family: 'MontserratBold';
 	@include roundedCorners(3);
 	
-	&:hover {
+	
+	&:hover, &:focus {
 		color: $color-white;
 		text-decoration: none;
 	}

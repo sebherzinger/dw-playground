@@ -15,11 +15,13 @@ $(document).ready(function() {
 			}
 			
 		});
-
-		if ( $(this).scrollTop() > 1 ) {
-			$('#header').addClass("sticky");
-		} else{
-			$('#header').removeClass("sticky");
+		
+		if(window.innerWidth >= 768) {
+			if ( $(this).scrollTop() > 1 ) {
+				$('#header').addClass("sticky");
+			} else{
+				$('#header').removeClass("sticky");
+			}
 		}
 		
 	});
@@ -29,13 +31,13 @@ $(document).ready(function() {
     	var card = cards[i];
     	clickListener( card );
   	}
-
-  	function clickListener(card) {
-    	card.addEventListener( "click", function() {
-      		var c = this.classList;
-      		c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-    	});
-  	}
+	  
+	  $('.mobile-menu').on('click', function(e) {
+		  $(this).text(function(i, text){
+			return text === "X Close" ? "Menu" : "X Close";
+			});
+		 $('#header').toggleClass('sticky'); 
+	  });
 
 
 	$('#js-toTop').on('click', function(e) {
@@ -108,5 +110,12 @@ $(document).ready(function() {
 		$('.img-description').html($myImage.attr('data-description'));
 		$('.big-img').fadeOut('fast').attr('src', './assets/img/' + $myImage.attr('data-open')).fadeIn('fast');
 	}
+	
+	function clickListener(card) {
+    	card.addEventListener( "click", function() {
+      		var c = this.classList;
+      		c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+    	});
+  	}
 
 });
