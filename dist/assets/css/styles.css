@@ -6256,6 +6256,9 @@ h4 {
       min-height: 100%;
       width: auto; } }
 
+.hero-img-container {
+  overflow: hidden; }
+
 .hero-img {
   min-width: 100%; }
   @media (max-width: 767px) {
