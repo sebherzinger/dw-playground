@@ -66,6 +66,10 @@ h1 {
 		font-size: 3.0rem;
 		color: $color-white;
 		margin-top: 30px;
+		
+		@media (max-width: $screen-xs-max) {
+			font-size: 1.5rem;
+		}
 	}
 }
 
@@ -102,6 +106,12 @@ h4 {
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	margin-top: 120px;
+	
+	@media (max-width: $screen-xs-max) {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	
 	@include transition(500ms);
 
 	&.btn-yellow {
@@ -263,7 +273,15 @@ h4 {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%); 
+      -ms-transform: translate(-50%, -50%);   
+          transform: translate(-50%, -50%);   
 	width: 50%;
+	
+	@media (max-width: $screen-xs-max) {
+		width: 80%;
+		top: 30%;	
+	}
 	
 
   & h1 {

@@ -105,7 +105,7 @@ $(document).ready(function() {
 	
 	
 	function setLightboxImage(id) {
-		var $myImage = $('*[data-id="' + id + '"');
+		var $myImage = $('*[data-id="' + id + '"]');
 		$('.big-img').attr('data-id', $myImage.attr('data-id'));
 		$('.img-description').html($myImage.attr('data-description'));
 		$('.big-img').fadeOut('fast').attr('src', './assets/img/' + $myImage.attr('data-open')).fadeIn('fast');

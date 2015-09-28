@@ -54,12 +54,12 @@ html(lang="en")
 		section(id='gallery' class='gallery')
 			div.overlay.display-none
 				div.row
-					div.col-xs-2.prev.text-center
+					div.hidden-xs.col-sm-2.prev.text-center
 						div.prev-button 
 							a(href='#' class='prev')
 								img(src='./assets/img/prev-img.png' alt='vorheriges Bild' class='js-prevImage')
 						
-					div.col-xs-8
+					div.col-xs-12.col-sm-8
 						div.row
 							div.col-xs-12.text-center
 								a(href='#' class='close-button')
@@ -69,7 +69,7 @@ html(lang="en")
 								img(src='' class='img-responsive big-img' alt='big image' data-id='')
 								div.img-description 
 					
-					div.col-xs-2.next.text-center
+					div.hidden-xs.col-sm-2.next.text-center
 						div.next-button
 							a(href='#' class='prev')
 								img(src='./assets/img/next-img.png' alt='Nächstes Bild' class='js-nextImage')
