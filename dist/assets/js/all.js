@@ -65,9 +65,19 @@ $(document).ready(function() {
 	});
 
 	$('.js-scrollTo').on('click', function(e) {
+		var myOffset = 88;
+		
+		if(window.innerWidth <= 768) {
+			var myOffset = 0;	
+		}
+		
 		$('html, body').animate({
-			scrollTop: $('#' + $(this).data('name')).offset().top - 88
+			scrollTop: $('#' + $(this).data('name')).offset().top - myOffset
 		}, "slow");
+		
+		if(window.innerWidth <= 768) {
+			$('#header').removeClass('sticky');
+		}
 
 		e.preventDefault();
 	});
